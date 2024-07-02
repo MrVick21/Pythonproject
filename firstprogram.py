@@ -1,12 +1,12 @@
-class divb:
-    name="anonymous" #class attribute
-    school="Symbiosis"
-    def __init__(self,name,marks):
-        self.name=name #  #object attribute> class attribute   
-        self.marks=marks
-        print("Adding in databases....")
-
-s1=divb("shreya",97)
-print(s1.name)
+class card:
+    def __init__(self,accnum,password):
+        self.accnum=accnum
+        self.__password=password #private atrribute
+        print(self.accnum,self.__password)
+        self.__hello()
+    def __hello(self): #private method
+        print("Private Method")
 
 
+customer=card(34567,"vik123")
+print("Masta jhala Kaam")
